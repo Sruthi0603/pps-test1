@@ -1,1 +1,19 @@
- 
+gcc -g p0original.c
+Undefined command: "gcc".  Try "help".
+(gdb) gdb a.out
+Undefined command: "gdb".  Try "help".
+(gdb) b main
+Note: breakpoints 1, 2, 3, 4, 5, 6, 7, 8, 9 and 10 also set at pc 0x55d1dc40063e.
+Breakpoint 11 at 0x55d1dc40063e: file p0final.c, line 4.
+(gdb) r
+Starting program: /home/runner/pps-test1-2/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p0final.c:4
+4   printf("my name is Sruthi\n");
+(gdb) n
+my name is Sruthi
+5   return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 236) exited normally] 
