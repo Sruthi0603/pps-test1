@@ -38,3 +38,6 @@ n
 (gdb) n
 21903 + 634109360 is 634131263
 9     return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 115) exited normally]
